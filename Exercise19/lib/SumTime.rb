@@ -1,17 +1,22 @@
 class SumTime
-
+ @@time_var=0
 def initialize(time_arr)
  @array_times = time_arr
 end
 
 def to_s
- if @begin_time.match(/\d{2}:\d{2}:\d{2}/)
-  
-   time_addition(@array_times)
-else
-	puts "Time does not match"
- end
 
+@array_times.each do |arrt|
+
+  if not arrt.match(/\d{2}:\d{2}:\d{2}/)
+  puts "Time does not match"
+  Kernel.abort("Closing Program...")
+ end
+end
+
+time_addition(@array_times)
+convertToTime()
+ 
 end
 
 def convert_to_seconds(time_var)
@@ -46,27 +51,34 @@ def convert_to_seconds(time_var)
 end
 
 def time_addition(arr_times)
-	start_seconds = convert_to_seconds(start_time)
-	end_seconds   = convert_to_seconds(end_time)
-    days=0
-	sum_time = end_seconds + start_seconds
-   
-    timemod = sum_time%3600
-         hr = sum_time/3600
-    	 sec = timemod%60
-    	 min = timemod/60
 
-    	 if hr > 24
-    	 	days = hr/24
-    	 	hr = hr%24
-    	 end
-    	 puts "Time Sum \n"
 
-    	 if hr > 24
-    	 puts "#{hr.to_i}:#{sec.to_i}:#{min.to_i}"
-    	else
-    		puts "#{days.to_i} day(s) #{hr.to_i}:#{sec.to_i}:#{min.to_i}"
-    	end
+   arr_times.each do |arr|
+ arr_time = convert_to_seconds(arr)
+  
+  @@time_var = @@time_var + Float(arr_time)
+   end  
+end
+
+
+def convertToTime()
+     timemod = @@time_var%3600
+         hr = @@time_var/3600
+       sec = timemod%60
+       min = timemod/60
+
+       if hr > 24
+        days = hr/24
+        hr = hr%24
+       end
+        
+       puts "Time Sum \n"
+
+       if hr > 24
+       puts "#{hr.to_i}:#{sec.to_i}:#{min.to_i}"
+      else
+        puts "#{days.to_i} day(s) #{hr.to_i}:#{sec.to_i}:#{min.to_i}"
+      end
 end
 
 end
