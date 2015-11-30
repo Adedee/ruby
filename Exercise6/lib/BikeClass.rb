@@ -6,7 +6,7 @@ class Bike < Vehicle
 
 	def to_s()
 		 self.class.superclass.instance_method(:display).bind(self).call
-		 puts "Dealer name : #{dealer}"
+		 puts "Dealer name : #{dealer} "
 	end
 
 
