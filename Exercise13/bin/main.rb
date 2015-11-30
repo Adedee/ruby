@@ -1,6 +1,6 @@
 require_relative('../lib/FactorialClass.rb')
 
-puts "Please enter factorial number"
+puts "Please enter factorial number "
 text = gets.chomp
 
 if text.nil?
