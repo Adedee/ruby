@@ -20,7 +20,7 @@ class UserInput
  	   else
  	   	reversedword = uword1.reverse
  	   	if uword1==reversedword
-            puts "Input string is a palindrome"
+            puts "Input string is definitely a palindrome"
         else
         	puts "Input string is not a palindrome"
           end
