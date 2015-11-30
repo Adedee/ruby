@@ -18,7 +18,7 @@ new_word = ""
 
   end
  puts "#{new_word} \n"
- puts "No occurences found #{cnt}"
+ puts "No occurences found #{cnt} "
 end
 
 end
