@@ -33,6 +33,6 @@ class Inverser
   end
 
   def to_s
-    puts inverse
+    puts "Inversed text #{inverse}"
   end
 end
