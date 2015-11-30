@@ -1,6 +1,6 @@
 require_relative('../lib/SumTime.rb')
 
-puts "Please enter no of times to sum"
+puts "Please enter no of times to sum "
 x = gets.chomp
 
 timearr = Array[]
