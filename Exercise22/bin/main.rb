@@ -1,10 +1,10 @@
 require_relative('../lib/NameClass.rb')
 begin
-puts "Please enter your firstname"
+puts "Please enter your firstname "
 first_name = gets.chomp
 first_letter = first_name[0]
 
-puts "Please enter your lastname"
+puts "Please enter your lastname "
 last_name = gets.chomp
 
 raise "Null Exception"
