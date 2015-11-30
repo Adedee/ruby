@@ -7,7 +7,7 @@ cnt = Float(text)
 arrnum = Array[]
 
 if text.nil?
-	puts "Please enter a number"
+	puts "Please enter a new number"
 else
 
 	for i in 1..cnt
