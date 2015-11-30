@@ -1,6 +1,6 @@
 require_relative('../lib/UserInput.rb')
 
-puts "Please enter a text"
+puts "Please enter a new text"
 text = gets.chomp
 userinput = UserInput.new()
 
