@@ -13,7 +13,7 @@ class Customer
 	def display()
 		acct_no = @account_no.to_f
 		acct_no += 1
- 		puts "Account #{acct_no} created \n"
+ 		puts "Customer Account #{acct_no} created \n"
 		puts "Initial balance #{@balance} \n"
 		puts "Account Name #{@name}"
 	end
