@@ -12,7 +12,7 @@ class CharacterClass
 
     puts "#{num_lcase} Lowercases Characters"
     puts "#{num_ucase} Uppercase Characters"
-    puts "#{num_digit} digits"
+    puts "#{num_digit} digits "
     puts "#{num_chars} special Characters"
    
   end
