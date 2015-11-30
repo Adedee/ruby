@@ -23,7 +23,7 @@ class ArrayToHash
 
           puts "#{@array_number} \n"
 
-          puts "#{hash} \n"
+          puts "#{hash}  \n"
          
     end
 end
