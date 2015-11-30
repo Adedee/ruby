@@ -4,7 +4,7 @@ class UserInput
 	  
   	  uword = word.downcase
       changedword = uword.gsub(/[aeiou]/) { |item| "*" }
- 	             puts changedword
+ 	             puts "Changed word #{changedword} "
         
     end
 
