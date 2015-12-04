@@ -1,11 +1,7 @@
-require_relative('../lib/UserInput.rb')
+require_relative('../lib/fixnum.rb')
 
-puts "Please enter a text"
-text = gets.chomp
-userinput = UserInput.new()
+puts "Please enter maximum number for fibonacci"
+number = gets.chomp.to_i
+number.generate_fibonacci { |i| puts i }
 
-if text.nil?
-	puts "Please enter a text"
-else
-  userinput.insert_character(text)
-end
+
