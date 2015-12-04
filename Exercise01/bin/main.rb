@@ -1,4 +1,4 @@
-require_relative('../lib/UserInput.rb')
+require_relative('../lib/user_input.rb')
 
 puts "Please enter a text "
 text = gets.chomp
