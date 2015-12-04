@@ -1,21 +1,21 @@
-require_relative('../lib/ArrayHashClass.rb')
+require_relative('../lib/array_hash_class.rb')
 
 puts "Please enter number of array elements"
 text = gets.chomp
-cnt = Float(text)
+number = Float(text)
 
-arrnum = Array[]
+array_numbers = Array[]
 
 if text.nil?
-	puts "Please enter a new number"
+  puts "Please enter a new number"
 else
 
-	for i in 1..cnt
-    	puts "enter array value #{i}"
-    	text = gets.chomp
-   		arrnum.push(text)
-	end
- arrtohash = ArrayToHash.new(arrnum)
- puts arrtohash
+  for i in 1..number
+    puts "enter array value #{i}"
+    text = gets.chomp
+    array_numbers.push(text)
+  end
+  array_to_hash = ArrayToHash.new(array_numbers)
+  puts array_to_hash
 
 end
