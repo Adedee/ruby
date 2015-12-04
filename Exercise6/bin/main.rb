@@ -1,4 +1,4 @@
-require_relative('../lib/BikeClass.rb')
+require_relative('../lib/bike_class.rb')
 
 puts "Enter Vehicle type"
 vehicle_type = gets.chomp
