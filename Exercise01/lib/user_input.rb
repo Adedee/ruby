@@ -2,13 +2,13 @@ class UserInput
 
   def get_occurences(word)
 	  hash = Hash.new(0)
-  	  uword = word.upcase
+  	  upcase_word = word.upcase
       
- 	  uword.split("").each do |i|
-      cnt = uword.count(i)
+ 	  upcase_word.split("").each do |i|
+      count = upcase_word.count(i)
         if not hash.has_key?(i)
-          h1 = { i => cnt}
-          hash.merge(h1)
+          hash_value = { i => count}
+          hash.merge(hash_value)
         end 
     end
    puts "Output #{hash} "
