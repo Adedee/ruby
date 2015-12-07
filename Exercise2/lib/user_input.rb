@@ -1,9 +1,9 @@
 class UserInput
 
   def insert_character(word)
-	uword = word.downcase
-    changedword = uword.gsub(/[aeiou]/) { |item| "*" }
- 	puts changedword
+	upcase_word = word.downcase
+    changed_word = upcase_word.gsub(/[aeiou]/) { |item| "*" }
+ 	puts changed_word
   end
 
 end
