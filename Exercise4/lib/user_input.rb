@@ -6,20 +6,20 @@ class UserInput
       Kernel.abort("Closing Program...")
   	end
 	  
-  	  uword = word.downcase
-  	  uword1 = uword.gsub(" ","")
-  	  uword2 = uword1.gsub!(/[!@%&",'.;]/,'')
+  	  upcase_word = word.downcase
+  	  upcase_word1 = upcase_word.gsub(" ","")
+  	  upcase_word2 = upcase_word1.gsub!(/[!@%&",'.;]/,'')
       
-      if not uword2.nil?
-       	reversedword = uword2.reverse
-          if uword2==reversedword
+      if not upcase_word2.nil?
+       	reversed_word = upcase_word2.reverse
+          if upcase_word2==reversed_word
             puts "Input string is a palindrome"
           else
         	  puts "Input string is not a palindrome"
           end
  	    else
- 	   	  reversedword = uword1.reverse
- 	   	if uword1==reversedword
+ 	   	  reversed_word = upcase_word1.reverse
+ 	   	if upcase_word1==reversed_word
            puts "Input string is definitely a palindrome"
         else
         	 puts "Input string is not a palindrome"

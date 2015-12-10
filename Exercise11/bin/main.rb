@@ -1,21 +1,8 @@
-require_relative('../lib/ArrayHashClass.rb')
+require_relative '../lib/triangle.rb'
 
-puts "Please enter number of array elements"
-text = gets.chomp
-cnt = Float(text)
+puts "Enter range number for paschal triangle"
+level_number = Integer(gets.chomp)
 
-arrnum = Array[]
-
-if text.nil?
-	puts "Please enter a number"
-else
-
-	for i in 1..cnt
-    	puts "enter array value #{i}"
-    	text = gets.chomp
-   		arrnum.push(text)
-	end
- arrtohash = ArrayToHash.new(arrnum)
- puts arrtohash
-
-end
+pascal = PascalTriangle.new
+puts "" 
+pascal.pascal_triangle(level_number) { |value| puts "#{value}"}
