@@ -2,10 +2,10 @@ require_relative('../lib/user_input.rb')
 
 puts "Please enter a text"
 text = gets.chomp
-userinput = UserInput.new()
+user_input = UserInput.new()
 
 if text.nil?
   puts "Please enter a text"
 else
-  userinput.reverse_text(text)
+  user_input.reverse_text(text)
 end
