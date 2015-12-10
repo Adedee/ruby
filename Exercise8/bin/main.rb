@@ -6,7 +6,7 @@ text = gets.chomp
 
 if text.nil?
 	puts "Please enter a valid number"
-elsed
+else
   exponent = Power.new(text)
   puts exponent.to_s
 end
