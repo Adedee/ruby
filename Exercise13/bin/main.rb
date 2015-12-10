@@ -1,4 +1,4 @@
-require_relative('../lib/FactorialClass.rb')
+require_relative('../lib/factorial_class.rb')
 
 puts "Please enter factorial number "
 text = gets.chomp
