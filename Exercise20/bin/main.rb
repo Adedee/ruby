@@ -1,4 +1,4 @@
-require_relative('../lib/InterestCalculator.rb')
+require_relative('../lib/interest_calculator.rb')
 
 puts "Please enter principal "
 p = gets.chomp
@@ -7,8 +7,8 @@ p = gets.chomp
 puts "Please enter time "
 t = gets.chomp
 
-IC = InterestCalculator.new(p,t)
-IC.to_s
+interest_calculator = InterestCalculator.new(p,t)
+interest_calculator.to_s
 
 
 
