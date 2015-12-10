@@ -1,4 +1,4 @@
-require_relative('../lib/PrimeClass.rb')
+require_relative('../lib/prime_class.rb')
 
 puts "Please enter text"
 text = gets.chomp
@@ -7,7 +7,7 @@ if text.nil?
 	puts "Please enter a number "
 else
 
- primenumbers = PrimeNumber.new(text)
- puts primenumbers.to_s
+ prime_numbers = PrimeNumber.new(text)
+ puts prime_numbers.to_s
 
 end
