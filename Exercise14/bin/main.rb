@@ -1,4 +1,4 @@
-require_relative('../lib/ReverserClass.rb')
+require_relative('../lib/reverser_class.rb')
 
 puts "Please enter text"
 text = gets.chomp
